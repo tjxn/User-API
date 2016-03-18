@@ -17,11 +17,10 @@ mongoose - http://mongoosejs.com/docs/ - /routes/api.ts<br>
 <p>
 Definition of a User (JSON):<br>
 {<br>
-&nbsp;&nbsp;&nbsp; "Title": String,<br>
-&nbsp;&nbsp;&nbsp; "Stormpath-ID": String,<br>
+&nbsp;&nbsp;&nbsp; "StormpathID": String,<br>
 &nbsp;&nbsp;&nbsp; "Favourites" : [String],<br>
 &nbsp;&nbsp;&nbsp; "Contributed" : [String],<br>
-&nbsp;&nbsp;&nbsp; "Type": String,<br>
+&nbsp;&nbsp;&nbsp; "UserType": String,<br>
 &nbsp;&nbsp;&nbsp; "Email": String<br>
 }<br>
 </p>

@@ -6,10 +6,10 @@
 import mongoose = require('mongoose');
 
 var UserSchema = new mongoose.Schema({
-    "Stormpath-ID": String,
+    "StormpathID": String,
     "Favourites" : [String],
     "Contributed" : [String],
-    "Type": String,
+    "UserType": String,
     "Email": String
 });
 export = mongoose.model('User', UserSchema);

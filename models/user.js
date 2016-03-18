@@ -4,10 +4,10 @@
 /// <reference path="../typings/browser/ambient/mongoose/mongoose.d.ts"/>
 var mongoose = require('mongoose');
 var UserSchema = new mongoose.Schema({
-    "Stormpath-ID": String,
+    "StormpathID": String,
     "Favourites": [String],
     "Contributed": [String],
-    "Type": String,
+    "UserType": String,
     "Email": String
 });
 module.exports = mongoose.model('User', UserSchema);
