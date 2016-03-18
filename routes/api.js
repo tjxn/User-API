@@ -42,6 +42,7 @@ router.post('/', function (req, res, next) {
     // If the call doesn't contain the field Title then
     // call was done incorrectly, throw error
     var text = JSON.stringify(req.body);
+    console.log('Received:');
     console.log(req.body);
     if (text.indexOf('StormpathID') < 0) {
         res.json("Error: Given object was not a user");
@@ -50,7 +51,8 @@ router.post('/', function (req, res, next) {
     User.create(req.body, function (err, post) {
         if (err)
             return next(err);
-        res.json(post);
+        var msg = JSON.stringify(post);
+        res.json(msg);
     });
 });
 /* DELETE /user/:id */
