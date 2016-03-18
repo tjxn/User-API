@@ -43,7 +43,7 @@ router.post('/', function (req, res, next) {
     // call was done incorrectly, throw error
     var text = JSON.stringify(req.body);
     console.log(req.body);
-    if (text.indexOf('Stormpath-ID') < 0) {
+    if (text.indexOf('StormpathID') < 0) {
         res.json("Error: Given object was not a user");
         return;
     }
