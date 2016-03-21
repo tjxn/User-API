@@ -4,7 +4,6 @@
 /// <reference path="../typings/browser/ambient/mongoose/mongoose.d.ts"/>
 var mongoose = require('mongoose');
 var UserSchema = new mongoose.Schema({
-    "StormpathID": String,
     "Favourites": [String],
     "Contributed": [String],
     "UserType": String,

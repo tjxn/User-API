@@ -6,7 +6,6 @@
 import mongoose = require('mongoose');
 
 var UserSchema = new mongoose.Schema({
-    "StormpathID": String,
     "Favourites" : [String],
     "Contributed" : [String],
     "UserType": String,
