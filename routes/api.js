@@ -17,6 +17,16 @@ router.get('/', function (req, res, next) {
         res.json(user);
     });
 });
+/* GET /user/:email. */
+// Return User with specified email
+router.get('/:email', function (req, res, next) {
+    console.log(req.params.email);
+    User.findOne({ "Email": req.params.email }, function (err, user) {
+        if (err)
+            return next(err);
+        res.json(user);
+    });
+});
 /* GET /user/id */
 router.get('/:id', function (req, res, next) {
     User.findById(req.params.id, function (err, post) {
