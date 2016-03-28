@@ -19,7 +19,7 @@ router.get('/', function (req, res, next) {
 });
 /* GET /user/:email. */
 // Return User with specified email
-router.get('/:email', function (req, res, next) {
+router.get('/email/:email', function (req, res, next) {
     console.log(req.params.email);
     User.findOne({ "Email": req.params.email }, function (err, user) {
         if (err)
@@ -28,7 +28,7 @@ router.get('/:email', function (req, res, next) {
     });
 });
 /* GET /user/id */
-router.get('/:id', function (req, res, next) {
+router.get('/id/:id', function (req, res, next) {
     User.findById(req.params.id, function (err, post) {
         if (err) {
             res.json('Error: Cannot Find Object With That ID');
