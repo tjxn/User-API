@@ -9,11 +9,12 @@ mongoose - http://mongoosejs.com/docs/ - /routes/api.ts<br>
 <br>
 </p>
 
-|            | GET                          | PUT                            | POST               | DELETE                         |
-|------------|------------------------------|--------------------------------|--------------------|--------------------------------|
-| /User      |     Retrieve every User      |               N/A              | Create a New User  |               N/A              |
-| /User/:id |  Retrieve User with given ID  | Update User with specified ID  |         N/A        | Delete User with specified ID  |
-
+|                    | GET                            | PUT                           | POST               | DELETE                        |
+|--------------------|--------------------------------|-------------------------------|--------------------|-------------------------------|
+| /user              | Retrieve JSON of every user.   | N/A                           | Create a new User. | N/A                           |
+| /user/id/:id       | Retrieve User with given ID    | N/A                           | N/A                | N/A                           |
+| /user/email/:email | Retrieve User with given email | N/A                           | N/A                | N/A                           |
+| /user/:id          | N/A                            | Update User with specified ID | N/A                | Delete User with specified ID |
 <p>
 Definition of a User (JSON):<br>
 {<br>
